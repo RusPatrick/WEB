@@ -19,7 +19,7 @@
 		    	<span class="navbar-toggler-icon"></span>
 		    	</button>
 		    	<a class="navbar-brand" href="#">
-		    		<img src="../static/img/770848-200.png" width="40" height="40" class="d-inline-block align-top" alt="">ProgerQuestions
+		    		<img src="{% static "questions/img/770848-200.png" %}" width="40" height="40" class="d-inline-block align-top" alt="">ProgerQuestions
  						<a class="btn btn-primary ask" href="ask.html">ASK</a>
 
 		    	</a>
@@ -53,6 +53,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9">
+			{% block questions %}
+			{% endblock %}
 			{% block content %}
 			{% endblock %}
 		</div>
@@ -64,11 +66,11 @@
 			<h4 class="centered">Лучшие участники</h4>
 			<div class="best_members block">
 				<ul class="members">
-					<li class="avatar"><a href="#"><img src="../static/img/user.jpg" alt="user">Dexter</a></li>
-					<li class="avatar"><a href="#"><img src="../static/img/user.jpg" alt="user">Homer</a></li>
-					<li class="avatar"><a href="#"><img src="../static/img/user.jpg" alt="user">Anabel</a></li>
-					<li class="avatar"><a href="#"><img src="../static/img/user.jpg" alt="user">Dr.House</a></li>
-					<li class="avatar"><a href="#"><img src="../static/img/user.jpg" alt="user">Secret</a></li>
+					<li class="avatar"><a href="#"><img src="{% static "questions/img/user.png" %}" alt="user">Dexter</a></li>
+					<li class="avatar"><a href="#"><img src="{% static "questions/img/user.png" %}" alt="user">Homer</a></li>
+					<li class="avatar"><a href="#"><img src="{% static "questions/img/user.png" %}" alt="user">Anabel</a></li>
+					<li class="avatar"><a href="#"><img src="{% static "questions/img/user.png" %}" alt="user">Dr.House</a></li>
+					<li class="avatar"><a href="#"><img src="{% static "questions/img/user.png" %}" alt="user">Secret</a></li>
 				</ul>
 			</div>
 		</div>
@@ -79,7 +81,7 @@
 <!--Footer-->
 <footer class="footer">
 	<div class="container">
-		<span class="text-muted">Place sticky footer content here.</span>
+		<span class="text">Проект созданный специально для курса WEB-технологии от Технопарка. </span>
 	</div>
 </footer>
 <!--/.Footer-->

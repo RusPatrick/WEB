@@ -1,5 +1,46 @@
-{% extends  "base.html"%}
+{% extends  "base.html" %}
+
+{% load staticfiles %}
+
+{% block questions %}
+
+	<div class="sections">
+		<ul class="section">
+			<li><a href="#">Новые вопросы</a></li>
+			<li><a href="#">Лучшие вопросы</a></li>
+		</ul>
+	</div>
+
+{% endblock %}
 
 {% block content %}
-
+    {% for question in questions %}
+        <div class="row post">
+        	<div class="col-lg-2">
+				<p class="post-avatar"><img src="{% static "questions/img/user.png" %}" alt="user"></p>
+				<span>
+					<table class="post-rating">
+						<tr>
+							<td rowspan="2">
+								<div class="rating">
+									5
+								</div>
+							</td>
+							<td class="up"><i class="fas fa-chevron-up"></i></td>
+						</tr>
+						<tr>
+							<td><i class="fas fa-chevron-down"></i></td>
+						</tr>
+					</table>
+				</span>
+			</div>
+            <div class="col-lg-10">
+            	<h1><a href="">{{ question.title }}</a></h1>
+            	<p>{{ question.text|linebreaksbr }}</p>
+            	<div class="date">
+            	    {{ question.published_date }}
+            	</div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}

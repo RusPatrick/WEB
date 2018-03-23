@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>WEB</title>
+</head>
+<body>
+<header class="container topbar">
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+		<div class="row justify-content-between align-items-center"">
+		    <div class="col-auto">
+		    	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		    	</button>
+		    	<a class="navbar-brand" href="index.html">
+		    		<img src="img/770848-200.png" width="40" height="40" class="d-inline-block align-top" alt="">ProgerQuestions
+ 						<a class="btn btn-primary" href="answer.html">ASK</a>
+
+		    	</a>
+		    </div>
+		
+			<div class="col-auto search">
+				<form class="form-inline">	
+		    	    <input class="form-control mr-sm-2" type="text" placeholder="Что ищем?">
+		    	    <button class="btn btn-primary my-2 my-sm-0" type="submit">Искать</button>
+			    </form>
+			</div>	
+
+		    <div class="col-auto profile">
+		    	<div class="collapse navbar-collapse" id="navbarColor02">
+		    		<table id="table_profile">
+				    	<tr>
+				    		<td rowspan=2><img id="user" src="img/user.jpg" width=40px height=40px alt="user"></td>
+				    		<td colspan=2><b>Username</b></td>
+				    	</tr>
+				    	<tr>
+				    		<td><a class="btn btn-primary usr-btn" href="user-settings.html">Настройки</a></td>
+				    		<td><a class="btn btn-primary usr-btn" href="Unregister.html">Выйти</a></td>
+				    	</tr>
+		    		</table>
+		    	</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="sections text-uppercase">
+				Новый вопрос
+			</div>
+			<div class="question">
+				<div class="form-group row">
+					<label for="title" class="col-2 col-form-label">Заголовок</label>
+					<div class="col-10">
+						<input type="text" class="form-control" id="title" placeholder="Заголовок">
+					</div>
+				</div>	
+				<div class="form-group row">
+					<label for="question" class="col-2 col-form-label">Вопрос</label>
+					<div class="col-10">
+						<textarea id="question" rows="5" class="form-control" placeholder="Задайте свой вопрос"></textarea>
+					</div>
+				</div>	
+				<div class="form-group row">
+					<label for="tags" class="col-2 col-form-label">Теги</label>
+					<div class="col-10">
+						<input type="text" class="form-control" id="tags" placeholder="Теги">
+					</div>
+				</div>
+				<input type="submit" class="offset-5 btn btn-primary" value="Задать вопрос">
+			</div>
+		</div>
+		<div class="col-lg-3 sidebar">
+			<h4 class="centered">Популярные теги</h4>
+			<div class="tags block">
+				<svg style="width: 100%; height: auto; display: block;" width="566" height="566" viewBox="0 0 566 566"><rect style="fill: rgb(255, 255, 255);" width="566" height="566"></rect><text x="184" y="309.55" class="sans-serif cL " style="fill: rgb(84, 192, 242); font-size: 69px;">C/C++</text><text x="272" y="330.15" class="sans-serif cL " style="fill: rgb(43, 139, 247); font-size: 17px;">CSS</text><text x="310" y="362.60" class="sans-serif cL " style="fill: rgb(123, 228, 239); font-size: 68px;">perl</text><text x="148" y="251.00" class="sans-serif cL " style="fill: rgb(67, 167, 244); font-size: 60px;">Javascript</text><text x="244" y="416.90" class="sans-serif cL " style="fill: rgb(106, 211, 240); font-size: 62px;">MySQL</text><text x="116" y="344.65" class="sans-serif cL " style="fill: rgb(25, 104, 250); font-size: 47px;">golang</text><text x="198" y="202.25" class="sans-serif cL " style="fill: rgb(123, 228, 239); font-size: 55px;">python</text><text x="172" y="371.55" class="sans-serif cL " style="fill: rgb(123, 228, 239); font-size: 29px;">ruby</text><text x="124" y="293.45" class="sans-serif cL " style="fill: rgb(67, 167, 244); font-size: 31px;">java</text><text x="178" y="159.10" class="sans-serif cL " style="fill: rgb(123, 228, 239); font-size: 18px;">assembler</text><text x="180" y="411.65" class="sans-serif cL " style="fill: rgb(123, 228, 239); font-size: 27px;">basic</text><text x="318" y="316.05" class="sans-serif cL " style="fill: rgb(25, 104, 250); font-size: 19px;">mail.ru</text><text x="384" y="273.10" class="sans-serif cL " style="fill: rgb(43, 139, 247); font-size: 18px;">delphi</text><text x="268" y="152.45" class="sans-serif cL " style="fill: rgb(25, 104, 250); font-size: 51px;">PHP</text><text x="312" y="452.50" class="sans-serif cL " style="fill: rgb(0, 64, 255); font-size: 30px;">pascal</text><text x="228" y="507.95" class="sans-serif cL " style="fill: rgb(25, 104, 250); font-size: 61px;">technopark</text><text x="122" y="142.90" class="sans-serif cL " style="fill: rgb(84, 192, 242); font-size: 62px;">swift</text><text x="96" y="268.80" class="sans-serif cL " style="fill: rgb(25, 104, 250); font-size: 64px;">R</text><text x="210" y="442.60" class="sans-serif cL " style="fill: rgb(106, 211, 240); font-size: 28px;">HTML</text><text x="140" y="87.70" class="sans-serif cL " style="fill: rgb(106, 211, 240); font-size: 46px;">objective-c</text><text x="278" y="353.95" class="sans-serif cL " style="fill: rgb(67, 167, 244); font-size: 21px;">C#</text><text x="106" y="440.70" class="sans-serif cL " style="fill: rgb(143, 239, 239); font-size: 26px;">Haskell</text></svg>
+			</div>
+			<h4 class="centered">Лучшие участники</h4>
+			<div class="best_members block">
+				<ul class="members">
+					<li class="avatar"><a href="#"><img src="img/user.jpg" alt="user">Dexter</a></li>
+					<li class="avatar"><a href="#"><img src="img/user.jpg" alt="user">Homer</a></li>
+					<li class="avatar"><a href="#"><img src="img/user.jpg" alt="user">Anabel</a></li>
+					<li class="avatar"><a href="#"><img src="img/user.jpg" alt="user">Dr.House</a></li>
+					<li class="avatar"><a href="#"><img src="img/user.jpg" alt="user">Secret</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="page-footer font-small blue pt-4 mt-4">
+
+    <!--Footer Links-->
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="text-uppercase">Footer Content</h5>
+                <p>Here you can use rows and columns here to organize your footer content.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="text-uppercase">Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+	
+<script src="js/jquery.min.js"></script>
+<script scr="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+</body>
+</html>
